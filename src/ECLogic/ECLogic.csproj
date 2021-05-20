@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\ECLab\Actors\InventoryActor.cs" Link="Actors\InventoryActor.cs" />
+    <Compile Include="..\ECLab\Actors\LogisticsActor.cs" Link="Actors\LogisticsActor.cs" />
+    <Compile Include="..\ECLab\Actors\OrderActor.cs" Link="Actors\OrderActor.cs" />
+    <Compile Include="..\ECLab\Actors\PaymentActor.cs" Link="Actors\PaymentActor.cs" />
+    <Compile Include="..\ECLab\Actors\ProductActor.cs" Link="Actors\ProductActor.cs" />
+    <Compile Include="..\ECLab\Model\Data\Order.cs" Link="Model\Data\Order.cs" />
+    <Compile Include="..\ECLab\Model\Data\Product.cs" Link="Model\Data\Product.cs" />
+    <Compile Include="..\ECLab\Model\Messages\DeliveryProducts.cs" Link="Model\Messages\DeliveryProducts.cs" />
+    <Compile Include="..\ECLab\Model\Messages\OrderCreated.cs" Link="Model\Messages\OrderCreated.cs" />
+    <Compile Include="..\ECLab\Model\Messages\OrderPaid.cs" Link="Model\Messages\OrderPaid.cs" />
+    <Compile Include="..\ECLab\Model\Messages\OrderProducts.cs" Link="Model\Messages\OrderProducts.cs" />
+    <Compile Include="..\ECLab\Model\Messages\PayForOrder.cs" Link="Model\Messages\PayForOrder.cs" />
+    <Compile Include="..\ECLab\Model\Messages\ProductDelivered.cs" Link="Model\Messages\ProductDelivered.cs" />
+    <Compile Include="..\ECLab\Model\Messages\ProductsSearchResult.cs" Link="Model\Messages\ProductsSearchResult.cs" />
+    <Compile Include="..\ECLab\Model\Messages\SearchProducts.cs" Link="Model\Messages\SearchProducts.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Actors\" />
+    <Folder Include="Model\Data\" />
+    <Folder Include="Model\Messages\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Akka" Version="1.4.20" />
+  </ItemGroup>
+
+</Project>

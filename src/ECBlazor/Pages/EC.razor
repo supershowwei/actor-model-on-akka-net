@@ -1,0 +1,46 @@
+﻿@page "/ec"
+@using ECBlazor.ViewModels
+@using System.ComponentModel
+@implements IDisposable
+
+<div>
+    <div>
+        <button @onclick="viewModel.SearchProdcts">搜尋商品</button>
+        <br>
+        <textarea id="products" cols="50" rows="10" @bind="viewModel.Products"></textarea>
+    </div>
+    <div>
+        <button @onclick="viewModel.PlaceAnOrder">成立訂單</button>
+        <br>
+        <textarea id="order" cols="50" rows="10" @bind="viewModel.Order"></textarea>
+    </div>
+    <div>
+        <button @onclick="viewModel.PayForOrder">付款</button>
+        <br>
+        <textarea id="pay" cols="50" rows="10" @bind="viewModel.Delivery"></textarea>
+    </div>
+</div>
+
+@code {
+
+    private readonly ECViewModel viewModel = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        viewModel.PropertyChanged += OnPropertyChangedHandler;
+
+        await base.OnInitializedAsync();
+    }
+
+    async void OnPropertyChangedHandler(object sender, PropertyChangedEventArgs e)
+    {
+        await InvokeAsync(() => { StateHasChanged(); });
+    }
+
+    public void Dispose()
+    {
+        viewModel.PropertyChanged -= OnPropertyChangedHandler;
+        viewModel.Dispose();
+    }
+
+}

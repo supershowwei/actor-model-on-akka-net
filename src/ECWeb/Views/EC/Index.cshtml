@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "EC Page";
+}
+
+<div class="text-center">
+    <div>
+        <button onclick="searchProducts()">搜尋商品</button>
+        <br>
+        <textarea id="products" cols="50" rows="10"></textarea>
+    </div>
+    <div>
+        <button onclick="placeAnOrder()">成立訂單</button>
+        <br>
+        <textarea id="order" cols="50" rows="10"></textarea>
+    </div>
+    <div>
+        <button onclick="pay()">付款</button>
+        <br>
+        <textarea id="pay" cols="50" rows="10"></textarea>
+    </div>
+</div>
+
+<script>
+    function searchProducts() {
+        $.ajax("/ec/searchproducts", { method: "GET" }).then(products => $("#products").val(JSON.stringify(products, null, "\t")));
+    }
+
+    function placeAnOrder() {
+        $.ajax("/ec/placeanorder", { method: "POST" }).then(order => $("#order").val(JSON.stringify(order, null, "\t")));
+    }
+
+    function pay() {
+        $.ajax("/ec/payfororder", { method: "POST" }).then(products => $("#pay").val(JSON.stringify(products, null, "\t")));
+    }
+</script>

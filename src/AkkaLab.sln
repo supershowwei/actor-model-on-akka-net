@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeadChild", "DeadChild\DeadChild.csproj", "{8FDAFD29-82C4-4C28-B37F-8D4304198C17}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECLab", "ECLab\ECLab.csproj", "{D44CBD55-A666-45AB-B757-7AE5443ECEC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECWinForm", "ECWinForm\ECWinForm.csproj", "{03A07876-3BDA-43FB-9A40-9432606EC31D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECLogic", "ECLogic\ECLogic.csproj", "{9753E912-A53B-4DC6-A1D7-010B5FFEAA43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECWeb", "ECWeb\ECWeb.csproj", "{26005A8F-F725-45E5-A367-82C1B0E09EAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECSignalR", "ECSignalR\ECSignalR.csproj", "{1E5B5D37-05B0-4BB2-A007-F810D19E1ADE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECBlazor", "ECBlazor\ECBlazor.csproj", "{0E3DFEC4-9019-48D3-A28D-D107FBEF6CB2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FDAFD29-82C4-4C28-B37F-8D4304198C17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FDAFD29-82C4-4C28-B37F-8D4304198C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FDAFD29-82C4-4C28-B37F-8D4304198C17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FDAFD29-82C4-4C28-B37F-8D4304198C17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D44CBD55-A666-45AB-B757-7AE5443ECEC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D44CBD55-A666-45AB-B757-7AE5443ECEC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D44CBD55-A666-45AB-B757-7AE5443ECEC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D44CBD55-A666-45AB-B757-7AE5443ECEC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03A07876-3BDA-43FB-9A40-9432606EC31D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03A07876-3BDA-43FB-9A40-9432606EC31D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03A07876-3BDA-43FB-9A40-9432606EC31D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03A07876-3BDA-43FB-9A40-9432606EC31D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9753E912-A53B-4DC6-A1D7-010B5FFEAA43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9753E912-A53B-4DC6-A1D7-010B5FFEAA43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9753E912-A53B-4DC6-A1D7-010B5FFEAA43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9753E912-A53B-4DC6-A1D7-010B5FFEAA43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26005A8F-F725-45E5-A367-82C1B0E09EAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26005A8F-F725-45E5-A367-82C1B0E09EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26005A8F-F725-45E5-A367-82C1B0E09EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26005A8F-F725-45E5-A367-82C1B0E09EAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E5B5D37-05B0-4BB2-A007-F810D19E1ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E5B5D37-05B0-4BB2-A007-F810D19E1ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E5B5D37-05B0-4BB2-A007-F810D19E1ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E5B5D37-05B0-4BB2-A007-F810D19E1ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E3DFEC4-9019-48D3-A28D-D107FBEF6CB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E3DFEC4-9019-48D3-A28D-D107FBEF6CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E3DFEC4-9019-48D3-A28D-D107FBEF6CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E3DFEC4-9019-48D3-A28D-D107FBEF6CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6C1834A-CBD9-47AD-B3DF-7184FFB24816}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "EC Page";
+}
+
+<div class="text-center">
+    <div>
+        <button onclick="searchProducts()">搜尋商品</button>
+        <br>
+        <textarea id="products" cols="50" rows="10"></textarea>
+    </div>
+    <div>
+        <button onclick="placeAnOrder()">成立訂單</button>
+        <br>
+        <textarea id="order" cols="50" rows="10"></textarea>
+    </div>
+    <div>
+        <button onclick="pay()">付款</button>
+        <br>
+        <textarea id="pay" cols="50" rows="10"></textarea>
+    </div>
+</div>
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+<script>
+    var connection = new signalR.HubConnectionBuilder().withUrl("/echub").build();
+
+    connection.on("ReceiveProductsSearchResult", products => {
+        $("#products").val(JSON.stringify(products, null, "\t"));
+    });
+
+    connection.on("OnOrderCreated", order => {
+        $("#order").val(JSON.stringify(order, null, "\t"));
+    });
+
+    connection.on("OnProductDelivered", products => {
+        $("#pay").val(JSON.stringify(products, null, "\t"));
+    });
+
+    connection.start();
+
+    function searchProducts() {
+        connection.invoke("SearchProducts");
+    }
+
+    function placeAnOrder() {
+        connection.invoke("PlaceAnOrder");
+    }
+
+    function pay() {
+        connection.invoke("PayForOrder");
+    }
+</script>
